@@ -100,21 +100,17 @@ const cartReducer = (state = initState, action) => {
 
   if (action.type === ADD_SHIPPING) {
     // Add code here (OPTIONAL)
-    if (action.type === ADD_SHIPPING) {
-      return {
-        ...state,
-        total: state.total + 6
-      }
+    return {
+      ...state,
+      total: state.total + 6
     }
   }
 
   if (action.type === SUB_SHIPPING) {
     // Add code here (OPTIONAL)
-    if (action.type === SUB_SHIPPING) {
-      return {
-        ...state,
-        total: state.total - 6
-      }
+    return {
+      ...state,
+      total: state.total - 6
     }
   }
 
